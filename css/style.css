@@ -76,6 +76,11 @@ i {
     color: black;
 }
 
+i.custom-icon-white {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+}
 
 .sexprop {
     cursor: pointer;

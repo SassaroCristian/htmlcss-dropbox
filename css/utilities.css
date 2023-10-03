@@ -5,6 +5,11 @@
     margin: 0;
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* Contenitore principale con larghezza massima e centratura */
@@ -69,6 +74,7 @@
 
 /*** LARGHEZZE ***/
 /* Classi per simpostare larghezze percentuali */
+
 .w-14 {
     width: 14%;
     /* 1/7 */
@@ -105,6 +111,10 @@
 .w-50 {
     width: 50%;
     /* 1/2 */
+}
+
+.w-55 {
+    width: 55%;
 }
 
 .w-60 {
@@ -289,6 +299,10 @@
     margin: 16px 0;
 }
 
+.mx-3 {
+    margin: 0 3px;
+}
+
 .mx-16 {
     margin: 0 16px;
 }
@@ -299,6 +313,10 @@
 
 .m-64 {
     margin: 64px;
+}
+
+.mt-32 {
+    margin-top: 32px;
 }
 
 .mt-64 {
@@ -438,7 +456,9 @@
 .border {
     border: 1px solid #000;
 }
-
+.border-white {
+    border: 1px solid #fff;
+}
 .border-top {
     border-top: 1px solid #000;
 }
