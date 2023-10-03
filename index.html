@@ -1,11 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
     <title>htmlcss-dropbox</title>
 </head>
+
 <body>
-    
+    <!-- INIZIO HEADER -->
+    <header class="d-flex">
+        <!-- 2 box header -->
+        <!-- left header -->
+        <div class="pl-16 w-50 d-flex ">
+            <div class="d-flex flex-align-center">
+                <img id="logo" src="./img/logo-small.png" alt="" />
+            </div>
+            <div class="d-flex px-16 flex-align-center ">
+                <p>Perchè Dropbox</p>
+            </div>
+            <div class="d-flex px-16 flex-align-center ">
+                <p>Funzioni</p>
+            </div>
+            <div class="d-flex px-16 flex-align-center ">
+                <p>Piani e Prezzi</p>
+            </div>
+        </div>
+        <!-- right header -->
+        <div class="w-50 p-16 d-flex flex-align-center flex-row-reversed">
+            <div class="d-flex">
+                <button>Inizia</button>
+            </div>
+            <div class="d-flex px-16">
+                <p>Accedi</p>
+            </div>
+            <div class="d-flex px-16">
+                <p>Contatta l'ufficio vendite</p>
+            </div>
+            <div class="d-flex px-16">
+                <p>Supporto</p>
+            </div>
+        </div>
+    </header>
+
+    <div id="blue-row" class="d-flex bg-blue">
+
+        <!-- centered box -->
+        <div class="d-flex  centered-cont-jumb ">
+
+            <!-- INIZIO SEZIONE JUMBO -->
+            <section class="mcustom w-100 d-fle flex-column   flex-wrap ">
+                <h1 id="h1-jumbo" class="d-flex w-70 flex-align-center">
+                    Tutto ciò che ti serve per il <br>lavoro, in un unico posto
+                </h1>
+                <div class="w-100 d-flex flex-row ">
+                    <div class="d-flex w-25  flex-column flex-wrap">
+                        <p class="d-flex w-100 mt-64 flex-wrap rel-pos">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                            corporis itaque dolor tempore, exercitationem provident incidunt
+                            amet error placeat vero, officia alias facilis quae fuga veniam
+                            natus, ullam in ea.
+                        </p>
+
+                        <div class="d-flex mt-16">
+                            <button class="">Inizia la prova gratuita</button>
+                        </div>
+                        <p class="mt-16">Annulla in qualsiasi momento</p>
+                        <!-- icona freccia -->
+                    </div>
+
+                    <div class="d-flex w-50 flex-justify-center l-16 flex-row">
+                        <img id="jumbo-img" class="abs-pos mt-64" src="./img/jumbo.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <div class="centered-container">
+        <!-- INIZIO MAIN -->
+        <main class="mt-100 pl-100">
+            <div class="">
+                <h2>Trova il piano buisness che fa per te</h2>
+
+                <input class="mt-64 " type="radio" name="lorem ipsum" id="" /> Fatturazione mensile
+                <input class="mb-64 ml-20" type="radio" name="lorem ipsum" id="" /> Fatturazione annuale
+            </div>
+            <!-- INIZIO SEZIONE PIANI -->
+            <div id="cont-piani" class="d-flex ">
+                <div class="d-flex w-33 flex-column">
+                    <i class="fa-solid fa-user"></i><div></i><p>Singolo</p></div>
+                    <div>
+                        <h3>Professional</h3>
+                        <p>€ 12.00</p>
+                        <p>/mese</p>
+
+                        <i class="fa-solid fa-user"></i>
+                        <p>1 utente</p>
+                        <p></p>
+                        <p></p>
+
+                        <button></button>
+
+                        <p></p>
+                        <hr />
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="d-flex w-33 flex-column ">
+                    <div></div>
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                        <button></button>
+
+                        <p></p>
+                        <hr />
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="d-flex w-33 flex-column">
+                    <div></div>
+                    <div>
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+                        <button></button>
+
+                        <p></p>
+                        <hr />
+
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INIZIO SEZIONE ENTERPRISE -->
+            <div>
+                <div></div>
+                <div>
+                    <div>
+                        <h2></h2>
+                        <button>lorem lorem loremlo</button>
+                    </div>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- INIZIO SEZIONE FOTO/ TROVA PARTNER -->
+            <div>
+                <div></div>
+                <div>
+                    <h3></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptates, et eius. Inventore eum accusamus sequi, ratione
+                        aspernatur architecto vitae, asperiores quia iste offictetur
+                        adipisicing elit. Voluptates, et eius. Inventore eum accusamus
+                        sequi, ratione aspernatur architecto vitae, asperiores quia iste
+                        officia repellat? Officia cumque suscipit quod id nisi.
+                    </p>
+                    <button></button>
+                </div>
+            </div>
+
+            <!-- DROPBOX BUISNESS -->
+            <div>
+                <h2></h2>
+                <div>
+                    <!-- PRIMA FASCIA BUISNESS -->
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+
+                    <!-- SECONDA FASCIA BUISNESS-->
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="" />
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- FASCIA FINE MAIN -->
+                <div>
+                    <h2></h2>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- INIZIO SEZONE CARDS COLORATE -->
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <div></div>
+            <hr />
+            <p>
+                Lorem ipsum dolor sit amet consecteturonsectetur adipisicing elit.
+                Praesentium accusantium facilis, at ad laborum quidem magni laboriosam
+                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
+                quia! Quam, velit consequaturonsectetur adipisicing elit. Praesentium
+                accusantium facilis, at ad laborum quidem magni laboriosam
+                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
+                quia! Quam, velit consequatur adipisicing elit. Praesentium
+                accusantium facilis, at ad laborum quidem magni laboriosam
+                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
+                quia! Quam, velit consequatur!
+            </p>
+            <p>lorem lorem lorem lorem</p>
+        </div>
+    </section>
+
+    <div id="blue-row" class="d-flex bg-blue">
+        <!-- INIZIO SEZIONE AZZURRA -->
+        <section class="centered-container">
+            <div>
+                <h2></h2>
+            </div>
+
+            <div>
+                <button></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- INIZIO SEZIONE FAQ -->
+    <section class="centered-container">
+        <h2></h2>
+        <div>
+            <p></p>
+            <!-- icona -->
+        </div>
+
+        <div>
+            <p></p>
+            <!-- icona -->
+        </div>
+
+        <div>
+            <p></p>
+            <!-- icona -->
+        </div>
+    </section>
+
+    <!-- INIZIO FOOTER -->
+    <footer class="centered-container">
+        <div>
+            <div>
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <!-- icona -->
+            <p>lorem</p>
+        </div>
+    </footer>
 </body>
+
 </html>

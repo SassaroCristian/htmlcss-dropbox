@@ -8,10 +8,17 @@
 }
 
 /* Contenitore principale con larghezza massima e centratura */
-.centered-container {
-  max-width: 1100px;
+.centered-cont-jumb {
+  width: 1230px;
   margin: auto;
 }
+
+.centered-container {
+  width: 1040px;
+  margin: auto;
+  
+}
+
 
 /* Posizioni */
 .rel-pos {
@@ -172,6 +179,14 @@
 .px-64 {
   padding: 0 64px;
 }
+.pl-375{
+  padding-left: 375px;
+}
+
+.pl-100{
+  padding-left: 150px;
+}
+
 .pcustom {
   padding: 120px 200px;
 }
@@ -204,12 +219,22 @@
 .mt-64 {
   margin-top: 64px;
 }
+
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mr-64 {
   margin-right: 64px;
 }
 .mb-64 {
   margin-bottom: 64px;
 }
+
+.ml-20 {
+  margin-left: 64px;
+}
+
 .ml-64 {
   margin-left: 64px;
 }
@@ -219,8 +244,11 @@
 .mx-64 {
   margin: 0 64px;
 }
+
+
 .mcustom {
-  margin: 120px 200px;
+  margin-left: 200px;
+  margin-top:150px ;
 }
 
 /* Colori di testo */
@@ -247,8 +275,8 @@
 .bg-darkblue {
   background-color: darkblue;
 }
-.bg-header {
-  background-color: #255EE9;
+.bg-blue {
+  background-color: #B3D0E8;
 }
 .bg-pink {
   background-color: pink;
@@ -290,7 +318,13 @@
   background-color: none;
 }
 
+
 /* Classi per impostare i bordi */
+
+.dashed {
+  border: 1px dashed black;
+}
+
 .border {
   border: 1px solid #000;
 }
