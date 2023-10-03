@@ -1,382 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/utilities.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/utilities.css" />
-    <title>htmlcss-dropbox</title>
-</head>
+        <title>htmlcss-dropbox</title>
+    </head>
 
-<body>
-    <!-- INIZIO HEADER -->
-    <header class="d-flex">
-        <!-- 2 box header -->
-        <!-- left header -->
-        <div class="pl-16 w-50 d-flex ">
-            <div class="d-flex flex-align-center">
-                <img id="logo" src="./img/logo-small.png" alt="" />
-            </div>
-            <div class="d-flex px-16 flex-align-center ">
-                <p>Perchè Dropbox</p>
-            </div>
-            <div class="d-flex px-16 flex-align-center ">
-                <p>Funzioni</p>
-            </div>
-            <div class="d-flex px-16 flex-align-center ">
-                <p>Piani e Prezzi</p>
-            </div>
-        </div>
-        <!-- right header -->
-        <div class="w-50 p-16 d-flex flex-align-center flex-row-reversed">
-            <div class="d-flex">
-                <button>Inizia</button>
-            </div>
-            <div class="d-flex px-16">
-                <p>Accedi</p>
-            </div>
-            <div class="d-flex px-16">
-                <p>Contatta l'ufficio vendite</p>
-            </div>
-            <div class="d-flex px-16">
-                <p>Supporto</p>
-            </div>
-        </div>
-    </header>
-
-    <div id="blue-row" class="d-flex bg-blue">
-
-        <!-- centered box -->
-        <div class="d-flex  centered-cont-jumb ">
-
-            <!-- INIZIO SEZIONE JUMBO -->
-            <section class="mcustom w-100 d-fle flex-column   flex-wrap ">
-                <h1 id="h1-jumbo" class="d-flex w-70 flex-align-center">
-                    Tutto ciò che ti serve per il <br>lavoro, in un unico posto
-                </h1>
-                <div class="w-100 d-flex flex-row ">
-                    <div class="d-flex w-25  flex-column flex-wrap">
-                        <p class="d-flex w-100 mt-64 flex-wrap rel-pos">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
-                            corporis itaque dolor tempore, exercitationem provident incidunt
-                            amet error placeat vero, officia alias facilis quae fuga veniam
-                            natus, ullam in ea.
-                        </p>
-
-                        <div class="d-flex mt-16">
-                            <button class="">Inizia la prova gratuita</button>
-                        </div>
-                        <p class="mt-16">Annulla in qualsiasi momento</p>
-                        <!-- icona freccia -->
-                    </div>
-
-                    <div class="d-flex w-50 flex-justify-center l-16 flex-row">
-                        <img id="jumbo-img" class="abs-pos mt-64" src="./img/jumbo.png" alt="">
-                    </div>
+    <body>
+        <!-- INIZIO HEADER -->
+        <header class="d-flex">
+            <!-- 2 box header -->
+            <!-- left header -->
+            <div class="pl-16 w-50 d-flex">
+                <div class="d-flex flex-align-center">
+                    <img id="logo" src="./img/logo-small.png" alt="" />
                 </div>
+                <div class="d-flex px-16 flex-align-center sexprop">
+                    <p>Perchè Dropbox</p>
+                </div>
+                <div class="d-flex px-16 flex-align-center sexprop">
+                    <p>Funzioni</p>
+                </div>
+                <div class="d-flex px-16 flex-align-center sexprop">
+                    <p>Piani e Prezzi</p>
+                </div>
+            </div>
+            <!-- right header -->
+            <div class="w-50 p-16 d-flex flex-align-center flex-row-reversed">
+                <div class="d-flex sexprop">
+                    <button class="btn-blue">Inizia</button>
+                </div>
+                <div class="d-flex px-16 sexprop">
+                    <p>Accedi</p>
+                </div>
+                <div class="d-flex px-16 sexprop">
+                    <p>Contatta l'ufficio vendite</p>
+                </div>
+                <div class="d-flex px-16 sexprop">
+                    <p>Supporto</p>
+                </div>
+            </div>
+        </header>
 
-            </section>
+        <div id="blue-row" class="d-flex bg-blue">
+            <!-- centered box -->
+            <div class="d-flex cont-big flex-justify-center">
+                <!-- INIZIO SEZIONE JUMBO -->
+                <section
+                    class="mcustom w-100 ml-230 d-fle flex-column flex-wrap"
+                >
+                    <h1 id="h1-jumbo" class="d-flex w-70 flex-align-center">
+                        Tutto ciò che ti serve per il lavoro, in un unico posto
+                    </h1>
+                    <div class="w-100 d-flex flex-row">
+                        <div class="d-flex w-25 flex-column flex-wrap">
+                            <p class="d-flex w-100 mt-64 flex-wrap rel-pos">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Dicta corporis itaque dolor
+                                tempore, exercitationem provident incidunt amet
+                                error placeat vero,
+                            </p>
+
+                            <div class="d-flex mt-16">
+                                <button class="btn-blue">
+                                    Inizia la prova gratuita
+                                </button>
+                            </div>
+                            <p class="mt-16">Annulla in qualsiasi momento</p>
+                            <i id="arrow-d" class="fas fas fa-arrow-down"></i>
+                        </div>
+
+                        <div
+                            class="d-flex w-50 flex-justify-center l-16 flex-row"
+                        >
+                            <img
+                                id="jumbo-img"
+                                class="mt-64 abs-pos"
+                                src="./img/jumbo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
 
-    <div class="centered-container">
-        <!-- INIZIO MAIN -->
-        <main class="mt-100 pl-100">
-            <div class="">
+        <div class="cont-small">
+            <!-- INIZIO MAIN -->
+            <main class="mt-150">
                 <h2>Trova il piano buisness che fa per te</h2>
 
-                <input class="mt-64 " type="radio" name="lorem ipsum" id="" /> Fatturazione mensile
-                <input class="mb-64 ml-20" type="radio" name="lorem ipsum" id="" /> Fatturazione annuale
-            </div>
-            <!-- INIZIO SEZIONE PIANI -->
-            <div id="cont-piani" class="d-flex ">
-                <div class="d-flex w-33 flex-column">
-                    <i class="fa-solid fa-user"></i><div></i><p>Singolo</p></div>
-                    <div>
-                        <h3>Professional</h3>
-                        <p>€ 12.00</p>
-                        <p>/mese</p>
+                <input class="mt-64" type="radio" name="lorem ipsum" id="" />
+                Fatturazione mensile
+                <input class="mb-64" type="radio" name="lorem ipsum" id="" />
+                Fatturazione annuale
+                <!-- INIZIO SEZIONE PIANI -->
+                <div id="cont-piani" class="d-flex flex-justify-around">
+                    <div class="dashed d-flex w-25 flex-column">
+                        <div
+                            id="sing-plan"
+                            class="dashed d-flex flex-row flex-align-center flex-justify-center"
+                        >
+                            <i class="fas fa-user"></i>
+                            <p>Singolo</p>
+                        </div>
 
-                        <i class="fa-solid fa-user"></i>
-                        <p>1 utente</p>
-                        <p></p>
-                        <p></p>
+                        <div class="p-16 d-flex flex-column">
+                            <div class="">
+                                <h3>Professional</h3>
+                                <span>€ 12.00</span>
+                                <span>/mese</span>
+                            </div>
 
-                        <button></button>
+                            <div>
+                                <span><i class="fas fa-user"></i>1 Utente</span>
+                            </div>
 
-                        <p></p>
-                        <hr />
+                            <div>
+                                <span
+                                    ><i class="fas fa-folder"></i>5 TB di spazio
+                                    di archiviazione sicuro</span
+                                >
+                            </div>
 
-                        <p></p>
+                            <div>
+                                <span
+                                    ><i class="fas fa-share-alt"></i>Funzioni di
+                                    produttività premiun e condivisione file
+                                    semplice e sicura</span
+                                >
+                            </div>
 
-                        <p></p>
+                            <div>
+                                <button class="btn-blue">
+                                    Prova gratis per 30 giorni
+                                </button>
+                            </div>
 
-                        <p></p>
+                            <div>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+
+                            <hr />
+
+                            <div><p>Punti salienti del piano</p></div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashed d-flex w-25 flex-column">
+                        <div
+                            id="sing-plan"
+                            class="dashed d-flex flex-row flex-align-center flex-justify-center"
+                        >
+                            <i class="fas fa-user"></i>
+                            <p>Singolo</p>
+                        </div>
+
+                        <div class="p-16 d-flex flex-column">
+                            <div class="">
+                                <h3>Professional</h3>
+                                <span>€ 12.00</span>
+                                <span>/mese</span>
+                            </div>
+
+                            <div>
+                                <span><i class="fas fa-user"></i>1 Utente</span>
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fa-folder"></i>5 TB di spazio
+                                    di archiviazione sicuro</span
+                                >
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fa-share-alt"></i>Funzioni di
+                                    produttività premiun e condivisione file
+                                    semplice e sicura</span
+                                >
+                            </div>
+
+                            <div>
+                                <button class="btn-blue">
+                                    Prova gratis per 30 giorni
+                                </button>
+                            </div>
+
+                            <div>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+
+                            <hr />
+
+                            <div><p>Punti salienti del piano</p></div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashed d-flex w-25 flex-column">
+                        <div
+                            id="sing-plan"
+                            class="dashed d-flex flex-row flex-align-center flex-justify-center"
+                        >
+                            <i class="fas fa-user"></i>
+                            <p>Singolo</p>
+                        </div>
+
+                        <div class="p-16 d-flex flex-column">
+                            <div class="">
+                                <h3>Professional</h3>
+                                <span>€ 12.00</span>
+                                <span>/mese</span>
+                            </div>
+
+                            <div>
+                                <span><i class="fas fa-user"></i>1 Utente</span>
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fa-folder"></i>5 TB di spazio
+                                    di archiviazione sicuro</span
+                                >
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fa-share-alt"></i>Funzioni di
+                                    produttività premiun e condivisione file
+                                    semplice e sicura</span
+                                >
+                            </div>
+
+                            <div>
+                                <button class="btn-blue">
+                                    Prova gratis per 30 giorni
+                                </button>
+                            </div>
+
+                            <div>
+                                <p>oppure <a href="#">acquista ora</a></p>
+                            </div>
+
+                            <hr />
+
+                            <div><p>Punti salienti del piano</p></div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+
+                            <div>
+                                <span
+                                    ><i class="fas fas fa-check"></i>Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Quibusdam dolor incidunt, officiis
+                                    recusanda</span
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="d-flex w-33 flex-column ">
-                    <div></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-
-                        <p></p>
-                        <p></p>
-                        <p></p>
-
-                        <button></button>
-
-                        <p></p>
-                        <hr />
-
-                        <p></p>
-
-                        <p></p>
-
-                        <p></p>
-
-                        <p></p>
-
-                        <p></p>
-
-                        <p></p>
+                <!-- INIZIO SEZIONE ENTERPRISE -->
+                <div class="d-flex border flex-column mt-64">
+                    <div class="w-100 p-16 d-flex flex-justify-center">
+                        <span><i class="fas fas fa-building"></i>Team</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex w-100">
+                        <div class="w-70">
+                            <h3>enterprise</h3>
+                            <p>lorem lorem lorem lorem</p>
+                            <p>
+                                lore lorem lorem lorem loremlorem lorem lorem
+                                loremlorem lorem lorem loremlorem lorem lorem
+                                lorem
+                            </p>
+                        </div>
+                        <!-- button -->
+                        <div class="w-30">jjdjdjnd</div>
                     </div>
                 </div>
 
-                <div class="d-flex w-33 flex-column">
-                    <div></div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                        <p></p>
-
-                        <p></p>
-                        <p></p>
-                        <p></p>
-
-                        <button></button>
-
-                        <p></p>
-                        <hr />
-
-                        <p></p>
-
-                        <p></p>
-
-                        <p></p>
+                <!-- INIZIO SEZIONE FOTO/ TROVA PARTNER -->
+                <div class="d-flex mt-64">
+                    <div class="w-60">
+                        <img id="partner-img" src="./img/partner.png" alt="" />
                     </div>
-                </div>
-            </div>
-
-            <!-- INIZIO SEZIONE ENTERPRISE -->
-            <div>
-                <div></div>
-                <div>
-                    <div>
-                        <h2></h2>
-                        <button>lorem lorem loremlo</button>
-                    </div>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-
-            <!-- INIZIO SEZIONE FOTO/ TROVA PARTNER -->
-            <div>
-                <div></div>
-                <div>
-                    <h3></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptates, et eius. Inventore eum accusamus sequi, ratione
-                        aspernatur architecto vitae, asperiores quia iste offictetur
-                        adipisicing elit. Voluptates, et eius. Inventore eum accusamus
-                        sequi, ratione aspernatur architecto vitae, asperiores quia iste
-                        officia repellat? Officia cumque suscipit quod id nisi.
-                    </p>
-                    <button></button>
-                </div>
-            </div>
-
-            <!-- DROPBOX BUISNESS -->
-            <div>
-                <h2></h2>
-                <div>
-                    <!-- PRIMA FASCIA BUISNESS -->
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <!-- SECONDA FASCIA BUISNESS-->
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <div>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
+                    <div class="w-40 p-64 d-flex flex-align-center flex-column">
+                        <h3>jdudjdb</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Natus dolor aliquid sapiente alias ratione
+                            labore dolorum, aspernatur qui repudiandae impedit
+                            magnam ut quas obcaecati illum sed dolorem ipsa
+                            voluptate modi?
+                        </p>
+                        <button>jdudjdb</button>
                     </div>
                 </div>
 
-                <!-- FASCIA FINE MAIN -->
-                <div>
-                    <h2></h2>
-                    <a href="#"></a>
-                </div>
-            </div>
-        </main>
-    </div>
+                <!-- DROPBOX BUISNESS -->
+                <div class="d-flex flex-wrap mt-64 flex-column">
+                    <h2 class="text-center w-100">hfhfhdhdhfghfhehd</h2>
+                    <div class="w-100 d-flex flex-row flex-wrap">
+                        <!-- PRIMA FASCIA BUISNESS -->
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-switching-tools.png"
+                                alt=""
+                            />
+                            <h3>kfjeiuejh</h3>
+                            <p></p>
+                        </div>
 
-    <!-- INIZIO SEZONE CARDS COLORATE -->
-    <section>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-send-files-it.png"
+                                alt=""
+                            />
+                            <h3>jdjhwuduudu</h3>
+                            <p></p>
+                        </div>
+
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-send-files-it.png"
+                                alt=""
+                            />
+                            <h3>jdjhwuduudu</h3>
+                            <p></p>
+                        </div>
+
+                        <!-- SECONDA FASCIA BUISNESS-->
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            shhshshshs
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-send-files-it.png"
+                                alt=""
+                            />
+                            <h3>jdjhwuduudu</h3>
+                            <p></p>
+                        </div>
+
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            jsjsjsjjs
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-send-files-it.png"
+                                alt=""
+                            />
+                            <h3>jdjhwuduudu</h3>
+                            <p></p>
+                        </div>
+
+                        <div
+                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
+                        >
+                            sjsjjsjs
+                            <img
+                                class="img-business"
+                                src="./img/business-feature-send-files-it.png"
+                                alt=""
+                            />
+                            <h3>jdjhwuduudu</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <!-- FASCIA FINE MAIN -->
+                    <div class="w-100 my-64">
+                        <h2>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. <br />
+                            Nobis accusamus tenetur
+                        </h2>
+                        <a href="#">
+                            dolor sit, amet consectetur adipisicing el</a
+                        >
+                    </div>
+                </div>
+            </main>
         </div>
 
-        <div>
-            <div></div>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit amet consecteturonsectetur adipisicing elit.
-                Praesentium accusantium facilis, at ad laborum quidem magni laboriosam
-                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
-                quia! Quam, velit consequaturonsectetur adipisicing elit. Praesentium
-                accusantium facilis, at ad laborum quidem magni laboriosam
-                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
-                quia! Quam, velit consequatur adipisicing elit. Praesentium
-                accusantium facilis, at ad laborum quidem magni laboriosam
-                consequuntur sunt omnis eveniet reprehenderit qui ea vitae maiores
-                quia! Quam, velit consequatur!
-            </p>
-            <p>lorem lorem lorem lorem</p>
-        </div>
-    </section>
-
-    <div id="blue-row" class="d-flex bg-blue">
-        <!-- INIZIO SEZIONE AZZURRA -->
-        <section class="centered-container">
-            <div>
-                <h2></h2>
+        <!-- INIZIO SEZONE CARDS COLORATE -->
+        <section id="section-size" class="d-flex flex-justify-center w-100">
+            <div class="w-100 d-flex flex-wrap">
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue"
+                >
+                    <img class="w-50" src="./img/designit.svg" alt="" />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red"
+                >
+                    <img
+                        class="w-50"
+                        src="./img/arizona_state_university.svg"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen"
+                >
+                    <img
+                        class="w-50"
+                        src="./img/university_of_florida.svg"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange"
+                >
+                    <img class="w-50" src="./img/topps.svg" alt="" />
+                </div>
             </div>
 
-            <div>
-                <button></button>
+            <div class="w-100 bg-lightgray">
+                <img src="./img/designit.svg" alt="" />
+                <!-- div hr -->
+                <div class="bottom w-25"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus repudiandae eius aut distinctio perspiciatis animi
+                    dolore nulla atque quas recusandae, eligendi sed dicta,
+                    labore porro accusamus ad iusto quasi dolor?
+                </p>
+                <p>lorem lorem lorem</p>
+            </div>
+
+            <div class="w-100 d-flex flex-wrap">
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue"
+                >
+                    <img
+                        class="w-50"
+                        src="./img/world_bicycle_relief.svg"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red"
+                >
+                    <img class="w-50" src="./img/hearst_corp.svg" alt="" />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen"
+                >
+                    <img class="w-50" src="./img/lonely_planet.svg" alt="" />
+                </div>
+                <div
+                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange"
+                >
+                    <img class="w-50" src="./img/clear_channel.svg" alt="" />
+                </div>
             </div>
         </section>
-    </div>
 
-    <!-- INIZIO SEZIONE FAQ -->
-    <section class="centered-container">
-        <h2></h2>
-        <div>
-            <p></p>
-            <!-- icona -->
-        </div>
+        <div
+            id="blue-row-2"
+            class="d-flex bg-blue flex-justify-center flex-align-center"
+        >
+            <!-- INIZIO SEZIONE AZZURRA -->
+            <div class="w-75 d-flex flex-justify-around">
+                <div class="">
+                    <h2>
+                        Porta Dropbox Business <br />
+                        nella tua azienda
+                    </h2>
+                </div>
 
-        <div>
-            <p></p>
-            <!-- icona -->
-        </div>
-
-        <div>
-            <p></p>
-            <!-- icona -->
-        </div>
-    </section>
-
-    <!-- INIZIO FOOTER -->
-    <footer class="centered-container">
-        <div>
-            <div>
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3></h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="">
+                    <button class="btn">Inizia la tua prova gratuita</button>
+                </div>
             </div>
         </div>
 
-        <div>
-            <!-- icona -->
-            <p>lorem</p>
-        </div>
-    </footer>
-</body>
+        <!-- INIZIO SEZIONE FAQ -->
+        <section class="centered-container">
+            <h2></h2>
+            <div>
+                <p></p>
+                <!-- icona -->
+            </div>
 
+            <div>
+                <p></p>
+                <!-- icona -->
+            </div>
+
+            <div>
+                <p></p>
+                <!-- icona -->
+            </div>
+        </section>
+
+        <!-- INIZIO FOOTER -->
+        <footer class="centered-container">
+            <div>
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <!-- icona -->
+                <p></p>
+            </div>
+        </footer>
+    </body>
 </html>
