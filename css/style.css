@@ -1,28 +1,33 @@
-
+:root {
+    --navbar-height: 5rem;
+    --primary-color: #0061ff;
+}
 
 header {
-    height: 80px;
+    height: var(--navbar-height);
     width: 100%;
     position: fixed;
     z-index: 99;
     background-color: white;
 }
 
-section{
+section {
     height: 720px;
     width: 1095px;
-    
+
 }
 
-button {
-    width: 235px;
-    height: 45px;
-    background-color: blue;
+.btn {
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    padding: 0.5em 1em;
+}
+
+.btn-blue {
+    background-color: var(--primary-color);
     color: white;
-    font-size: 15px;
 }
-
-
 
 #logo {
     width: 127px;
@@ -31,11 +36,15 @@ button {
 
 #blue-row {
     width: 100%;
-    height: 650px;
+    height: 700px;
 
 }
 
-#h1-jumbo{
+#blue-row-2 {
+    height: 250px;
+}
+
+#h1-jumbo {
     font-size: 55px;
     text-align: center;
     text-align: left;
@@ -47,10 +56,48 @@ button {
 }
 
 #cont-piani {
-    height:990px ;
+    height: 990px;
+}
+
+#sing-plan {
+    height: 40px;
+}
+
+#arrow-d {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
 }
 
 i {
     width: 15px;
     height: 15px;
+    color: black;
+}
+
+
+.sexprop {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.sexprop:hover {
+    transform: scale(1.01);
+}
+
+#partner-img {
+    width: 100%;
+}
+
+.img-business {
+    width: 80%;
+}
+
+#section-size {
+    height: 400px;
+}
+
+.center-text-calc {
+    margin-left: calc(50% - 50px);
 }
