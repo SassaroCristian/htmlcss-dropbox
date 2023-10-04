@@ -17,16 +17,8 @@ section {
 
 }
 
-.btn {
-    display: inline-block;
-    background-color: lightgray;
-    color: black;
-    padding: 0.5em 1em;
-}
-
-.btn-blue {
-    background-color: var(--primary-color);
-    color: white;
+div > a {
+    text-decoration: none;
 }
 
 #logo {
@@ -82,14 +74,6 @@ i.custom-icon-white {
     color: #fff;
 }
 
-.sexprop {
-    cursor: pointer;
-    transition-duration: 0.3s;
-}
-
-.sexprop:hover {
-    transform: scale(1.01);
-}
 
 #partner-img {
     width: 100%;
@@ -105,4 +89,10 @@ i.custom-icon-white {
 
 .center-text-calc {
     margin-left: calc(50% - 50px);
+}
+
+#scrollable-content {
+    height: calc(100vh - 375px);
+    overflow: hidden;
+    overflow-y: scroll;
 }

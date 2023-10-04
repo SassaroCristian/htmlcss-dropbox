@@ -1,700 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/utilities.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
 
-        <title>htmlcss-dropbox</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
-    <body>
-        <!-- INIZIO HEADER -->
-        <header class="d-flex">
-            <!-- 2 box header -->
-            <!-- left header -->
-            <div class="pl-16 w-50 d-flex">
-                <div class="d-flex flex-align-center">
-                    <img id="logo" src="./img/logo-small.png" alt="" />
-                </div>
-                <div class="d-flex px-16 flex-align-center sexprop">
-                    <p>Perchè Dropbox</p>
-                </div>
-                <div class="d-flex px-16 flex-align-center sexprop">
-                    <p>Funzioni</p>
-                </div>
-                <div class="d-flex px-16 flex-align-center sexprop">
-                    <p>Piani e Prezzi</p>
-                </div>
+    <title>htmlcss-dropbox</title>
+</head>
+
+<body>
+    <!-- INIZIO HEADER -->
+    <header class="d-flex">
+        <!-- 2 box header -->
+        <!-- left header -->
+        <div class="pl-16 w-50 d-flex">
+            <div class="d-flex flex-align-center">
+                <img id="logo" src="./img/logo-small.png" alt="" />
             </div>
-            <!-- right header -->
-            <div class="w-50 p-16 d-flex flex-align-center flex-row-reversed">
-                <div class="d-flex sexprop">
-                    <button class="btn-blue">Inizia</button>
-                </div>
-                <div class="d-flex px-16 sexprop">
-                    <p>Accedi</p>
-                </div>
-                <div class="d-flex px-16 sexprop">
-                    <p>Contatta l'ufficio vendite</p>
-                </div>
-                <div class="d-flex px-16 sexprop">
-                    <p>Supporto</p>
-                </div>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Perchè Dropbox</a>
             </div>
-        </header>
-
-        <div id="blue-row" class="d-flex bg-blue">
-            <!-- centered box -->
-            <div class="d-flex cont-big flex-justify-center">
-                <!-- INIZIO SEZIONE JUMBO -->
-                <section
-                    class="mcustom w-100 ml-230 d-fle flex-column flex-wrap"
-                >
-                    <h1 id="h1-jumbo" class="d-flex w-70 flex-align-center">
-                        Tutto ciò che ti serve per il lavoro, in un unico posto
-                    </h1>
-                    <div class="w-100 d-flex flex-row">
-                        <div class="d-flex w-25 flex-column flex-wrap">
-                            <p class="d-flex w-100 mt-64 flex-wrap rel-pos">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Dicta corporis itaque dolor
-                                tempore, exercitationem provident incidunt amet
-                                error placeat vero,
-                            </p>
-
-                            <div class="d-flex mt-16">
-                                <button class="btn-blue">
-                                    Inizia la prova gratuita
-                                </button>
-                            </div>
-                            <p class="mt-16">Annulla in qualsiasi momento</p>
-                            <i id="arrow-d" class="fas fas fa-arrow-down"></i>
-                        </div>
-
-                        <div
-                            class="d-flex w-50 flex-justify-center l-16 flex-row"
-                        >
-                            <img
-                                id="jumbo-img"
-                                class="mt-64 abs-pos"
-                                src="./img/jumbo.png"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </section>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Funzioni</a>
+            </div>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Piani e Prezzi</a>
             </div>
         </div>
+        <!-- right header -->
+        <div class="w-50 pl-16 d-flex flex-row-reversed">
 
-        <div class="cont-small">
-            <!-- INIZIO MAIN -->
-            <main class="mt-150">
-                <h2>Trova il piano buisness che fa per te</h2>
+            <div class="d-flex px-16 flex-align-center">
+                <button class="button-arounder">Inizia</button>
+            </div>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Accedi</a>
+            </div>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Contatta l'ufficio vendite</a>
+            </div>
+            <div class="d-flex px-16 flex-align-center">
+                <a href="">Supporto</a>
+            </div>
+        </div>
+    </header>
 
-                <input class="mt-64" type="radio" name="lorem ipsum" id="" />
-                Fatturazione mensile
-                <input class="mb-64" type="radio" name="lorem ipsum" id="" />
-                Fatturazione annuale
-                <!-- INIZIO SEZIONE PIANI -->
-                <div id="cont-piani" class="d-flex flex-justify-around">
-                    <div class="border d-flex w-25 flex-column">
-                        <div
-                            id="sing-plan"
-                            class=" d-flex flex-row flex-align-center flex-justify-center"
-                        >
-                            <i class="fas fa-user"></i>
-                            <p>Singolo</p>
-                            
-                        </div>
-                        <hr>
-                        <div class="p-16 d-flex flex-column">
-                            <h3 class="pt-16">Professional</h3>
-                            <p class="py-16">€12.00</p>
-                            <p class="mb-32">/mese</p> 
-
-                            <div>
-                                <i class="fas fa-user"></i>
-                                <span>1 Utente</span>
-                            </div>
-                            <div class="d-flex py-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fa-folder"></i>
-                                </div>
-                                    <span
-                                        >5 TB di spazio
-                                        di archiviazione sicuro</span
-                                    >
-                            </div>
-
-                            <div class="d-flex pb-32">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-share-alt"></i>
-                                </div>
-                                    <span
-                                        >Funzioni di
-                                        produttività premiun e condivisione file
-                                        semplice e sicura</span
-                                    >
-                            </div>
-
-                            <div class="pb-32">
-                                <button class="btn-blue">
-                                    Prova gratis per 30 giorni
-                                </button>
-                            </div>
-
-                            <div>
-                                <p>oppure <a href="#">acquista ora</a></p>
-                            </div>
-
-                            <hr class="mt-32" width="50" />
-
-                            <div class="mt-64"><p>Punti salienti del piano</p></div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Invia file fino a 100 GB con Dropbox Transfert </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- SECONDO PIANO -->
-                    <div class="border d-flex w-25 flex-column">
-                        <div
-                            id="sing-plan"
-                            class=" d-flex flex-row flex-align-center flex-justify-center"
-                        >
-                            <i class="fas fa-user"></i>
-                            <p>Singolo</p>
-                            
-                        </div>
-                        <hr>
-                        <div class="p-16 d-flex flex-column">
-                            <h3 class="pt-16">Professional</h3>
-                            <p class="py-16">€12.00</p>
-                            <p class="mb-32">/mese</p> 
-
-                            <div>
-                                <i class="fas fa-user"></i>
-                                <span>1 Utente</span>
-                            </div>
-                            <div class="d-flex py-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fa-folder"></i>
-                                </div>
-                                    <span
-                                        >5 TB di spazio
-                                        di archiviazione sicuro</span
-                                    >
-                            </div>
-
-                            <div class="d-flex pb-32">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-share-alt"></i>
-                                </div>
-                                    <span
-                                        >Funzioni di
-                                        produttività premiun e condivisione file
-                                        semplice e sicura</span
-                                    >
-                            </div>
-
-                            <div class="pb-32">
-                                <button class="btn-blue">
-                                    Prova gratis per 30 giorni
-                                </button>
-                            </div>
-
-                            <div>
-                                <p>oppure <a href="#">acquista ora</a></p>
-                            </div>
-
-                            <hr class="mt-32" width="50" />
-
-                            <div class="mt-64"><p>Punti salienti del piano</p></div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Invia file fino a 100 GB con Dropbox Transfert </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- TERZO PIANO -->
-                    <div class="border d-flex w-25 flex-column">
-                        <div
-                            id="sing-plan"
-                            class=" d-flex flex-row flex-align-center flex-justify-center"
-                        >
-                            <i class="fas fa-user"></i>
-                            <p>Singolo</p>
-                            
-                        </div>
-                        <hr>
-                        <div class="p-16 d-flex flex-column">
-                            <h3 class="pt-16">Professional</h3>
-                            <p class="py-16">€12.00</p>
-                            <p class="mb-32">/mese</p> 
-
-                            <div>
-                                <i class="fas fa-user"></i>
-                                <span>1 Utente</span>
-                            </div>
-                            <div class="d-flex py-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fa-folder"></i>
-                                </div>
-                                    <span
-                                        >5 TB di spazio
-                                        di archiviazione sicuro</span
-                                    >
-                            </div>
-
-                            <div class="d-flex pb-32">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-share-alt"></i>
-                                </div>
-                                    <span
-                                        >Funzioni di
-                                        produttività premiun e condivisione file
-                                        semplice e sicura</span
-                                    >
-                            </div>
-
-                            <div class="pb-32">
-                                <button class="btn-blue">
-                                    Prova gratis per 30 giorni
-                                </button>
-                            </div>
-
-                            <div>
-                                <p>oppure <a href="#">acquista ora</a></p>
-                            </div>
-
-                            <hr class="mt-32" width="50" />
-
-                            <div class="mt-64"><p>Punti salienti del piano</p></div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Invia file fino a 100 GB con Dropbox Transfert </span
-                                >
-                            </div>
-
-                            <div class="d-flex pt-16">
-                                <div class="mr-5 ">
-                                    <i class="fas fas fa-check"></i>
-                                </div>
-                                
-                                <span
-                                    >Cartelle offline su dispositivi mobili </span
-                                >
-                            </div>
-
-                        </div>
-                    </div>   
-                </div>
-
-                <!-- INIZIO SEZIONE ENTERPRISE -->
-                <div class="d-flex border flex-column mt-64">
-                    <div class="w-100 p-16 d-flex flex-justify-center">
-                        <span><i class="fas fas fa-building"></i>Team</span>
-                    </div>
-                    <hr />
-                    <div class="d-flex w-100">
-                        <div class="w-70">
-                            <h3 class="pl-16 my-16">enterprise</h3>
-                            <p class="pl-16 my-16">Contatta l'ufficio vendite</p>
-                            <p class="pl-16 my-16">
-                                Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
-                            </p>
-                        </div>
-                        <!-- button -->
-                        <div class="w-30">jjdjdjnd</div>
-                    </div>
-                </div>
-
-                <!-- INIZIO SEZIONE FOTO/ TROVA PARTNER -->
-                <div class="d-flex mt-64">
-                    <div class="w-60">
-                        <img id="partner-img" src="./img/partner.png" alt="" />
-                    </div>
-                    <div class="w-40 p-64 d-flex flex-align-center flex-column">
-                        <h3>jdudjdb</h3>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Natus dolor aliquid sapiente alias ratione
-                            labore dolorum, aspernatur qui repudiandae impedit
-                            magnam ut quas obcaecati illum sed dolorem ipsa
-                            voluptate modi?
+    <div id="blue-row" class="d-flex bg-blue">
+        <!-- centered box -->
+        <div class="d-flex cont-big flex-justify-center">
+            <!-- INIZIO SEZIONE JUMBO -->
+            <section class="mcustom w-100 ml-230 d-fle flex-column flex-wrap">
+                <h1 id="h1-jumbo" class="d-flex w-70 flex-align-center">
+                    Tutto ciò che ti serve per il lavoro, in un unico posto
+                </h1>
+                <div class="w-100 d-flex flex-row">
+                    <div class="d-flex w-25 flex-column flex-wrap">
+                        <p class="d-flex w-100 mt-64 flex-wrap rel-pos">
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+                            Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per otimizzare il flusso di lavoro eistente
                         </p>
-                        <button>jdudjdb</button>
+
+                        <div class="d-flex mt-16">
+                            <button class="button-arounder">
+                                Inizia la prova gratuita
+                            </button>
+                        </div>
+                        <p class="mt-16">Annulla in qualsiasi momento</p>
+                        <i id="arrow-d" class="fas fas fa-arrow-down"></i>
+                    </div>
+
+                    <div class="d-flex w-50 flex-justify-center l-16 flex-row">
+                        <img id="jumbo-img" class="mt-64 abs-pos" src="./img/jumbo.png" alt="" />
                     </div>
                 </div>
-
-                <!-- DROPBOX BUISNESS -->
-                <div class="d-flex flex-wrap mt-64 flex-column">
-                    <h2 class="text-center w-100">hfhfhdhdhfghfhehd</h2>
-                    <div class="w-100 d-flex flex-row flex-wrap">
-                        <!-- PRIMA FASCIA BUISNESS -->
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-switching-tools.png"
-                                alt=""
-                            />
-                            <h3>kfjeiuejh</h3>
-                            <p></p>
-                        </div>
-
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-send-files-it.png"
-                                alt=""
-                            />
-                            <h3>jdjhwuduudu</h3>
-                            <p></p>
-                        </div>
-
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-send-files-it.png"
-                                alt=""
-                            />
-                            <h3>jdjhwuduudu</h3>
-                            <p></p>
-                        </div>
-
-                        <!-- SECONDA FASCIA BUISNESS-->
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            shhshshshs
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-send-files-it.png"
-                                alt=""
-                            />
-                            <h3>jdjhwuduudu</h3>
-                            <p></p>
-                        </div>
-
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            jsjsjsjjs
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-send-files-it.png"
-                                alt=""
-                            />
-                            <h3>jdjhwuduudu</h3>
-                            <p></p>
-                        </div>
-
-                        <div
-                            class="w-33 d-flex flex-column flex-justify-center flex-align-center"
-                        >
-                            sjsjjsjs
-                            <img
-                                class="img-business"
-                                src="./img/business-feature-send-files-it.png"
-                                alt=""
-                            />
-                            <h3>jdjhwuduudu</h3>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <!-- FASCIA FINE MAIN -->
-                    <div class="w-100 my-64">
-                        <h2>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. <br />
-                            Nobis accusamus tenetur
-                        </h2>
-                        <a href="#">
-                            dolor sit, amet consectetur adipisicing el</a
-                        >
-                    </div>
-                </div>
-            </main>
+            </section>
         </div>
+    </div>
 
-        <!-- INIZIO SEZONE CARDS COLORATE -->
-        <section id="section-size" class="d-flex flex-justify-center w-100">
-            <div class="w-100 d-flex flex-wrap">
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue"
-                >
-                    <img class="w-50" src="./img/designit.svg" alt="" />
+    <div class="cont-small">
+        <!-- INIZIO MAIN -->
+        <main class="mt-150">
+            <h2>Trova il piano buisness che fa per te</h2>
+
+            <input class="mt-64" type="radio" name="lorem ipsum" id="" />
+            Fatturazione mensile
+            <input class="mb-64" type="radio" name="lorem ipsum" id="" />
+            Fatturazione annuale
+            <!-- INIZIO SEZIONE PIANI -->
+            <div id="cont-piani" class="d-flex flex-justify-around">
+                <div class="border d-flex w-25 flex-column">
+                    <div id="sing-plan" class=" d-flex flex-row flex-align-center flex-justify-center">
+                        <i class="fas fa-user"></i>
+                        <p>Singolo</p>
+
+                    </div>
+                    <hr>
+                    <div class="p-16 d-flex flex-column">
+                        <h3 class="pt-16">Professional</h3>
+                        <p class="py-16">€12.00</p>
+                        <p class="mb-32">/mese</p>
+
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <span>1 Utente</span>
+                        </div>
+                        <div class="d-flex py-16">
+                            <div class="mr-5 ">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <span>5 TB di spazio
+                                di archiviazione sicuro</span>
+                        </div>
+
+                        <div class="d-flex pb-32">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-share-alt"></i>
+                            </div>
+                            <span>Funzioni di
+                                produttività premiun e condivisione file
+                                semplice e sicura</span>
+                        </div>
+
+                        <div class="pb-32">
+                            <button class="button-arounder">
+                                Prova gratis per 30 giorni
+                            </button>
+                        </div>
+
+                        <div>
+                            <p>oppure <a href="#">acquista ora</a></p>
+                        </div>
+
+                        <hr class="mt-32" width="50" />
+
+                        <div class="mt-64">
+                            <p>Punti salienti del piano</p>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Invia file fino a 100 GB con Dropbox Transfert </span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Cartelle offline su dispositivi mobili </span>
+                        </div>
+
+                    </div>
                 </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red"
-                >
-                    <img
-                        class="w-50"
-                        src="./img/arizona_state_university.svg"
-                        alt=""
-                    />
+
+                <!-- SECONDO PIANO -->
+                <div class="border d-flex w-25 flex-column">
+                    <div id="sing-plan" class=" d-flex flex-row flex-align-center flex-justify-center">
+                        <i class="fas fa-user"></i>
+                        <p>Singolo</p>
+
+                    </div>
+                    <hr>
+                    <div class="p-16 d-flex flex-column">
+                        <h3 class="pt-16">Professional</h3>
+                        <p class="py-16">€12.00</p>
+                        <p class="mb-32">/mese</p>
+
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <span>1 Utente</span>
+                        </div>
+                        <div class="d-flex py-16">
+                            <div class="mr-5 ">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <span>5 TB di spazio
+                                di archiviazione sicuro</span>
+                        </div>
+
+                        <div class="d-flex pb-32">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-share-alt"></i>
+                            </div>
+                            <span>Funzioni di
+                                produttività premiun e condivisione file
+                                semplice e sicura</span>
+                        </div>
+
+                        <div class="pb-32">
+                            <button class="button-arounder">
+                                Prova gratis per 30 giorni
+                            </button>
+                        </div>
+
+                        <div>
+                            <p>oppure <a href="#">acquista ora</a></p>
+                        </div>
+
+                        <hr class="mt-32" width="50" />
+
+                        <div class="mt-64">
+                            <p>Punti salienti del piano</p>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Invia file fino a 100 GB con Dropbox Transfert </span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Cartelle offline su dispositivi mobili </span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Risparmio del 50% rispetto alle iscrizioni singole </span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Possibilità di inserire nuovi membri del team </span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Gestione dei permessi in base ai ruoli</span>
+                        </div>
+
+                    </div>
                 </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen"
-                >
-                    <img
-                        class="w-50"
-                        src="./img/university_of_florida.svg"
-                        alt=""
-                    />
-                </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange"
-                >
-                    <img class="w-50" src="./img/topps.svg" alt="" />
+
+
+                <!-- TERZO PIANO -->
+                <div class="border d-flex w-25 flex-column">
+                    <div id="sing-plan" class=" d-flex flex-row flex-align-center flex-justify-center">
+                        <i class="fas fa-user"></i>
+                        <p>Singolo</p>
+
+                    </div>
+                    <hr>
+                    <div class="p-16 d-flex flex-column">
+                        <h3 class="pt-16">Professional</h3>
+                        <p class="py-16">€12.00</p>
+                        <p class="mb-32">/mese</p>
+
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <span>1 Utente</span>
+                        </div>
+                        <div class="d-flex py-16">
+                            <div class="mr-5 ">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <span>5 TB di spazio
+                                di archiviazione sicuro</span>
+                        </div>
+
+                        <div class="d-flex pb-32">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-share-alt"></i>
+                            </div>
+                            <span>Funzioni di
+                                produttività premiun e condivisione file
+                                semplice e sicura</span>
+                        </div>
+
+                        <div class="pb-32">
+                            <button class="button-arounder">
+                                Prova gratis per 30 giorni
+                            </button>
+                        </div>
+
+                        <div>
+                            <p>oppure <a href="#">acquista ora</a></p>
+                        </div>
+
+                        <hr class="mt-32" width="50" />
+
+                        <div class="mt-64">
+                            <p>Punti salienti del piano</p>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Cartelle offline su dispositivi mobili</span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Servizio assistenza 24/h</span>
+                        </div>
+
+                        <div class="d-flex pt-16">
+                            <div class="mr-5 ">
+                                <i class="fas fas fa-check"></i>
+                            </div>
+
+                            <span>Possibilità di personalizzzazione totale</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
-            <div class="w-100 bg-lightgray">
-                <img src="./img/designit.svg" alt="" />
-                <!-- div hr -->
-                <div class="bottom w-25"></div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus repudiandae eius aut distinctio perspiciatis animi
-                    dolore nulla atque quas recusandae, eligendi sed dicta,
-                    labore porro accusamus ad iusto quasi dolor?
-                </p>
-                <p>lorem lorem lorem</p>
-            </div>
-
-            <div class="w-100 d-flex flex-wrap">
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue"
-                >
-                    <img
-                        class="w-50"
-                        src="./img/world_bicycle_relief.svg"
-                        alt=""
-                    />
+            <!-- INIZIO SEZIONE ENTERPRISE -->
+            <div class="d-flex border flex-column mt-64">
+                <div class="w-100 p-16 d-flex flex-justify-center">
+                    <span><i class="fas fas fa-building"></i>Team</span>
                 </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red"
-                >
-                    <img class="w-50" src="./img/hearst_corp.svg" alt="" />
-                </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen"
-                >
-                    <img class="w-50" src="./img/lonely_planet.svg" alt="" />
-                </div>
-                <div
-                    class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange"
-                >
-                    <img class="w-50" src="./img/clear_channel.svg" alt="" />
+                <hr />
+                <div class="d-flex w-100">
+                    <div class="w-70">
+                        <h3 class="pl-16 my-16">Enterprise</h3>
+                        <p class="pl-16 my-16">Contatta l'ufficio vendite</p>
+                        <p class="pl-16 my-16">
+                            Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
+                            su qualsiasi scala.
+                        </p>
+                    </div>
+                    <!-- button -->
+                    <div class="d-flex w-30 h-50 flex-justify-center mt-32">
+                        <button class="button-arounder">Contatta l'ufficio vendite</button>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- INIZIO SEZIONE AZZURRA -->
-        <div
-            id="blue-row-2"
-            class="d-flex bg-blue flex-justify-center flex-align-center"
-        >
-            <div class="w-75 d-flex flex-justify-around">
-                <div class="">
-                    <h2>
-                        Porta Dropbox Business <br />
-                        nella tua azienda
+            <!-- INIZIO SEZIONE FOTO/ TROVA PARTNER -->
+            <div class="d-flex mt-64">
+                <div class="w-60">
+                    <img id="partner-img" src="./img/partner.png" alt="" />
+                </div>
+                <div class="w-40 p-64 d-flex flex-align-center flex-column">
+                    <h3>Entra in contatto con un partner Dropbox</h3>
+                    <p class="pt-16">
+                        Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per
+                        raggiungere i tuoi obbiettivi aziendali, tra cui implementazione; integrazione; gestione e
+                        supporto continui.
+                    </p>
+                    <div class="d-flex w-100 mt-32 ">
+                        <button class="button-arounder">Trova un partner</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DROPBOX BUISNESS -->
+            <div class="d-flex flex-wrap mt-64 flex-column">
+                <h2 class="mb-32 w-100">Esegui più operazioni con Dropbox Buisness</h2>
+                <div class="w-100 d-flex flex-row flex-wrap ">
+                    <!-- PRIMA FASCIA BUISNESS -->
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center">
+                        <img class="img-business" src="./img/business-feature-switching-tools.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center mx-16">
+                        <img class="img-business" src="./img/business-feature-send-files-it.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center">
+                        <img class="img-business" src="./img/business-feature-coordinate-it.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <!-- SECONDA FASCIA BUISNESS-->
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center mt-32">
+                        <img class="img-business" src="./img/business-feature-integrations-it.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center mx-16 mt-32">
+                        <img class="img-business" src="./img/business-feature-multi-device.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+
+                    <div class="w-30 d-flex flex-column flex-justify-center flex-justify-around flex-align-center mt-32">
+                        <img class="img-business" src="./img/business-feature-security.png" alt="" />
+                        <h3 class="mt-16">Passa di meno da uno strumento all'altro</h3>
+                        <p class="mt-32">
+                            Porta a termine le attivita quotudiane con un solo strumento. Crea, modifica e cndividi contenuti cloud da Documenti. Fogli e Presentazioni di Goggle, file Microsoft Office e Dropbox Paper direttamente da Dropbox
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FASCIA FINE MAIN -->
+                <div class="w-100 my-64">
+                    <h2 class="my-64">
+                        Più di 500.00 team utilizzano <br> Dropbox Business
                     </h2>
+                    <a class="" href="#">
+                        Scopri di più sui nostri clienti</a>
                 </div>
+            </div>
+        </main>
+    </div>
 
-                <div class="">
-                    <button class="btn">Inizia la tua prova gratuita</button>
-                </div>
+    <!-- INIZIO SEZONE CARDS COLORATE -->
+    <section id="section-size" class="d-flex flex-justify-center w-100">
+        <div class="w-100 d-flex flex-wrap">
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue">
+                <img class="w-50" src="./img/designit.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red">
+                <img class="w-50" src="./img/arizona_state_university.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen">
+                <img class="w-50" src="./img/university_of_florida.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange">
+                <img class="w-50" src="./img/topps.svg" alt="" />
             </div>
         </div>
 
-        <!-- INIZIO SEZIONE FAQ -->
-        <div class="d-flex flex-justify-center flex-align-center">
-            <div class="w-55 d-flex flex-column flex-justify-around mt-150">
-                <h2 class="mb-64">fwvufy</h2>
-                <hr />
-                <div class="d-flex my-16 flex-justify-between">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicinglorum
-                        lorum
-                    </p>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <hr />
-                <div class="d-flex my-16 flex-justify-between">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicinglorum
-                        lorum
-                    </p>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <hr />
-                <div class="d-flex my-16 flex-justify-between">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicinglorum
-                        lorum
-                    </p>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <hr />
-            </div>
+
+        <div id="scrollable-content" class="w-100 bg-lightgray">
+        <div class=" p-32"> 
+            <img src="./img/designit.svg" alt="" />
+            <hr class="my-16" width="50">
+            <div class="bottom w-25"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus repudiandae eius aut distinctio perspiciatis animi
+                dolore nulla atque quas recusandae, eligendi sed dicta,
+                labore porro accusamus ad iusto quasi dolor?
+            </p>
+            <p>lorem lorem lorem</p>
+
+            <img src="./img/designit.svg" alt="" />
+            <hr class="my-16" width="50">
+            <div class="bottom w-25"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus repudiandae eius aut distinctio perspiciatis animi
+                dolore nulla atque quas recusandae, eligendi sed dicta,
+                labore porro accusamus ad iusto quasi dolor?
+            </p>
+            <p>lorem lorem lorem</p>
+
+            <img src="./img/designit.svg" alt="" />
+            <hr class="my-16" width="50">
+            <div class="bottom w-25"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus repudiandae eius aut distinctio perspiciatis animi
+                dolore nulla atque quas recusandae, eligendi sed dicta,
+                labore porro accusamus ad iusto quasi dolor?
+            </p>
+            <p>lorem lorem lorem</p>
+
+            <img src="./img/designit.svg" alt="" />
+            <hr class="my-16" width="50">
+            <div class="bottom w-25"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus repudiandae eius aut distinctio perspiciatis animi
+                dolore nulla atque quas recusandae, eligendi sed dicta,
+                labore porro accusamus ad iusto quasi dolor?
+            </p>
+            <p>lorem lorem lorem</p>
         </div>
 
-        <!-- INIZIO FOOTER -->
-        <footer class="bg-black">
-            <div class="w-t d-flex flex-wrap w-66 mt-150 pt-64 ml-230 cont-big">
-                <div class="w-20 d-flex flex-column">
-                    <h3>Dropbox</h3>
-                    <ul>
-                        <li>Apllicazione desktop</li>
-                        <li>Perchè Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>funzioni</li>
-                    </ul>
-                </div>
 
-                <div class="w-20 d-flex flex-column flex-justify-center">
-                    <h3>Prodotti</h3>
-                    <ul>
-                        <li>Apllicazione desktop</li>
-                        <li>Perchè Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>funzioni</li>
-                    </ul>
-                </div>
+        </div>
+        </div>
 
-                <div class="w-20 d-flex flex-column flex-justify-center">
-                    <h3>Azienda</h3>
-                    <ul>
-                        <li>Apllicazione desktop</li>
-                        <li>Perchè Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>funzioni</li>
-                    </ul>
-                </div>
+        <div class="w-100 d-flex flex-wrap">
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-blue">
+                <img class="w-50" src="./img/world_bicycle_relief.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-red">
+                <img class="w-50" src="./img/hearst_corp.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-lightseagreen">
+                <img class="w-50" src="./img/lonely_planet.svg" alt="" />
+            </div>
+            <div class="w-50 h-50 d-flex flex-justify-center flex-align-center bg-orange">
+                <img class="w-50" src="./img/clear_channel.svg" alt="" />
+            </div>
+        </div>
+    </section>
 
-                <div class="w-20 d-flex flex-column flex-justify-center">
-                    <h3>Supporto</h3>
-                    <ul>
-                        <li>Apllicazione desktop</li>
-                        <li>Perchè Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>funzioni</li>
-                    </ul>
-                </div>
+    <!-- INIZIO SEZIONE AZZURRA -->
+    <div id="blue-row-2" class="d-flex bg-blue flex-justify-center flex-align-center">
+        <div class="w-75 d-flex flex-justify-around">
+            <div class="">
+                <h2>
+                    Porta Dropbox Business <br />
+                    nella tua azienda
+                </h2>
+            </div>
 
-                <div class="w-20 d-flex flex-column flex-justify-center">
-                    <h3>Community</h3>
-                    <ul>
-                        <li>Apllicazione desktop</li>
-                        <li>Perchè Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>funzioni</li>
-                    </ul>
-                </div>
+            <div class="">
+                <button class="button-arounder">Inizia la tua prova gratuita</button>
+            </div>
+        </div>
+    </div>
 
-                <div class="mb-64">
-                    <hr class="mt-64" width="100" />
+    <!-- INIZIO SEZIONE FAQ -->
+    <div class="d-flex flex-justify-center flex-align-center">
+        <div class="w-55 d-flex flex-column flex-justify-around mt-150">
+            <h2 class="mb-64">Domande frequenti</h2>
+            <hr />
+            <div class="d-flex my-16 flex-justify-between">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicinglorum
+                    lorum
+                </p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <hr />
+            <div class="d-flex my-16 flex-justify-between">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicinglorum
+                    lorum
+                </p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <hr />
+            <div class="d-flex my-16 flex-justify-between">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicinglorum
+                    lorum
+                </p>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <hr />
+        </div>
+    </div>
 
-                    <div class="d-flex mt-32 flex-align-center">
-                        <i class="custom-icon-white fas fa-globe-americas"></i>
-                        <p class="mx-3">Italiano</p>
-                        <i class="custom-icon-white fas fa-sort-up"></i>
-                    </div>
+    <!-- INIZIO FOOTER -->
+    <footer class="bg-black">
+        <div class="w-t d-flex flex-wrap w-66 mt-150 pt-64 ml-230 cont-big">
+            <div class="w-20 d-flex flex-column">
+                <h3 class="pb-16">Dropbox</h3>
+                <ul>
+                    <li class="pb-8">Apllicazione desktop</li>
+                    <li class="pb-8">Perchè Dropbox</li>
+                    <li class="pb-8">Piani</li>
+                    <li class="pb-8">Sicurezza</li>
+                    <li class="pb-8">funzioni</li>
+                </ul>
+            </div>
+
+            <div class="w-20 d-flex flex-column flex-justify-center">
+                <h3 class="pb-16">Prodotti</h3>
+                <ul>
+                    <li class="pb-8">Apllicazione desktop</li>
+                    <li class="pb-8">Perchè Dropbox</li>
+                    <li class="pb-8">Piani</li>
+                    <li class="pb-8">Sicurezza</li>
+                    <li class="pb-8">funzioni</li>
+                </ul>
+            </div>
+
+            <div class="w-20 d-flex flex-column flex-justify-center">
+                <h3 class="pb-16">Azienda</h3>
+                <ul>
+                    <li class="pb-8">Apllicazione desktop</li>
+                    <li class="pb-8">Perchè Dropbox</li>
+                    <li class="pb-8">Piani</li>
+                    <li class="pb-8">Sicurezza</li>
+                    <li class="pb-8">funzioni</li>
+                </ul>
+            </div>
+
+            <div class="w-20 d-flex flex-column flex-justify-center">
+                <h3 class="pb-16">Supporto</h3>
+                <ul>
+                    <li class="pb-8">Apllicazione desktop</li>
+                    <li class="pb-8">Perchè Dropbox</li>
+                    <li class="pb-8">Piani</li>
+                    <li class="pb-8">Sicurezza</li>
+                    <li class="pb-8">funzioni</li>
+                </ul>
+            </div>
+
+            <div class="w-20 d-flex flex-column flex-justify-center">
+                <h3 class="pb-16">Community</h3>
+                <ul>
+                    <li class="pb-8">Apllicazione desktop</li>
+                    <li class="pb-8">Perchè Dropbox</li>
+                    <li class="pb-8">Piani</li>
+                    <li class="pb-8">Sicurezza</li>
+                    <li class="pb-8">funzioni</li>
+                </ul>
+            </div>
+
+            <div class="mb-64">
+                <hr class="mt-64" width="100" />
+
+                <div class="d-flex mt-32 flex-align-center">
+                    <i class="custom-icon-white fas fa-globe-americas"></i>
+                    <p class="mx-3">Italiano</p>
+                    <i class="pt-3 custom-icon-white fas fa-sort-up"></i>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
